@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MindCare</string>
+    <string-array name="myarray">
+        <item>Jenis Kelamin</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+</resources>
