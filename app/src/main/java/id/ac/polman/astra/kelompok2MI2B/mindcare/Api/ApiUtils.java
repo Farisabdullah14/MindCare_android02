@@ -1,6 +1,7 @@
 package id.ac.polman.astra.kelompok2MI2B.mindcare.Api;
 
 import id.ac.polman.astra.kelompok2MI2B.mindcare.Service.JurnalService;
+import id.ac.polman.astra.kelompok2MI2B.mindcare.Service.MoodService;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.Service.PenggunaService;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.Service.PsikologService;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.Service.RawService;
@@ -32,6 +33,12 @@ public class ApiUtils {
 
     public static PsikologService getPsikologService(){
         return RetrofitClient.getClient(API_URL).create(PsikologService.class);
+    }
+
+
+    //untuk mood service
+    public static MoodService getMoodService(){
+        return RetrofitClient.getClient(API_URL).create(MoodService.class);
     }
 
 

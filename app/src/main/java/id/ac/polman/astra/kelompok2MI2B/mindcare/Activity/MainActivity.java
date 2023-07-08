@@ -21,6 +21,7 @@ import id.ac.polman.astra.kelompok2MI2B.mindcare.Fragment.RegisterFragment;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.Model.Psikolog;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.R;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.JurnalRepository;
+import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.MoodRepository;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.PenggunaRepository;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.PsikologRepository;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.RawRepository;
@@ -38,7 +39,8 @@ public class MainActivity extends AppCompatActivity implements JurnalListFragmen
 
         JurnalRepository.initialize(this);
         PsikologRepository.initialize(this);
-
+        PenggunaRepository.initialize(this);
+        MoodRepository.initialize(this);
         initComponents();
     }
 

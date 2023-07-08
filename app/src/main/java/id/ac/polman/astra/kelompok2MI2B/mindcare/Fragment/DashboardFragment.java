@@ -17,12 +17,15 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import id.ac.polman.astra.kelompok2MI2B.mindcare.R;
+
 import id.ac.polman.astra.kelompok2MI2B.mindcare.databinding.ActivityMainBinding;
 
 public class DashboardFragment extends Fragment {
+    private static final String TAG = "DashboardFragment";
     ActivityMainBinding binding;
 
     private FloatingActionButton fabButton;
+    private MoodFragment mMoodFragment;
     private BottomSheetDialog bottomSheetDialog;
 
     public static DashboardFragment newInstance(){
@@ -67,7 +70,7 @@ public class DashboardFragment extends Fragment {
         ((AppCompatActivity) getActivity()).setSupportActionBar(bottomAppBar);
     }
 
-    private void showIconSheetDialog() {
+    public void showIconSheetDialog() {
         bottomSheetDialog = new BottomSheetDialog(getActivity());
         bottomSheetDialog.setContentView(R.layout.sheet_icon);
 
@@ -112,6 +115,8 @@ public class DashboardFragment extends Fragment {
 
         bottomSheetDialog.show();
     }
+
+
 
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getParentFragmentManager();

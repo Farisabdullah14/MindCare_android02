@@ -17,16 +17,16 @@ import retrofit2.http.PUT;
 import retrofit2.http.Query;
 
 public interface PenggunaService {
-    @GET("pengguna")
+
+    @GET("/api/pengguna/pengguna")
     Call<Pengguna> getPenggunaById(@Query("id_pengguna") int id);
 
-    @GET("users")
+    @GET("/api/pengguna/penggunas")
     Call<List<Pengguna>> getPenggunas();
 
-    @POST("user")
-    Call<Pengguna> addPengguna(@Body Pengguna pengguna);
 
-    @POST("savepengguna")
+
+    @POST("/api/pengguna/savepengguna")
     Call<Pengguna> savePengguna(@Body Pengguna pengguna);
 
     @PUT("user")

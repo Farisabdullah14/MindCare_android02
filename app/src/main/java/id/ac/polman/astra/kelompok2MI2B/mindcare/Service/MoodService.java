@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 public interface MoodService {
 
 
-    @GET("/api/psikolog/psikolog")
+    @GET("/api/mood/mood")
     Call<Mood> getMoodbyId(@Query("id") int id);
 
     @GET("/api/mood/moods")

@@ -101,8 +101,9 @@ public class PenggunaRepository {
     }
 
     public void savepengguna(Pengguna pengguna){
+        System.out.println("risa");
         Log.i(TAG, "addPengguna() called");
-        Call<Pengguna> call = mPenggunaService.addPengguna(pengguna);
+        Call<Pengguna> call = mPenggunaService.savePengguna(pengguna);
         call.enqueue(new Callback<Pengguna>() {
             @Override
             public void onResponse(Call<Pengguna> call, Response<Pengguna> response) {

@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //untuk mengambil data dari session
         pref = requireContext().getSharedPreferences("pengguna_pref", Context.MODE_PRIVATE);
         mRawRepository = RawRepository.get();
 

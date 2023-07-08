@@ -1,8 +1,13 @@
 package id.ac.polman.astra.kelompok2MI2B.mindcare.Model;
 
+import android.location.Location;
+
+import androidx.room.ForeignKey;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 
@@ -13,11 +18,11 @@ public class Mood {
 
     @SerializedName("id_user")
     @Expose
-    private Pengguna id_user;
+    private int id_user;
 
     @SerializedName("tanggal")
     @Expose
-    private Date tanggal;
+    private String  tanggal;
 
     @SerializedName("nilai")
     @Expose
@@ -27,12 +32,16 @@ public class Mood {
     @Expose
     private String perasaan;
 
-    public Mood(int id_mood, Pengguna id_user, Date tanggal, int nilai, String perasaan) {
+    public Mood(int id_mood,int id_user, String tanggal, int nilai, String perasaan) {
         this.id_mood = id_mood;
         this.id_user = id_user;
         this.tanggal = tanggal;
         this.nilai = nilai;
         this.perasaan = perasaan;
+    }
+
+    public Mood() {
+
     }
 
     public int getId_mood() {
@@ -43,19 +52,19 @@ public class Mood {
         this.id_mood = id_mood;
     }
 
-    public Pengguna getId_user() {
+    public int getId_user() {
         return id_user;
     }
 
-    public void setId_user(Pengguna id_user) {
+    public void setId_user(int id_user) {
         this.id_user = id_user;
     }
 
-    public Date getTanggal() {
+    public String getTanggal() {
         return tanggal;
     }
 
-    public void setTanggal(Date tanggal) {
+    public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
     }
 
@@ -74,4 +83,6 @@ public class Mood {
     public void setPerasaan(String perasaan) {
         this.perasaan = perasaan;
     }
+
+
 }

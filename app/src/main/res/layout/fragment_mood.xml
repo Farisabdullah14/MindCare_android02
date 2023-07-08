@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mood_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -24,6 +25,7 @@
 
 
         <LinearLayout
+            android:id="@+id/mood1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -41,11 +43,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Icon 1" />
+                android:text="Sangat Buruk" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/mood2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,11 +65,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Icon 2" />
+                android:text="Buruk" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/mood3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,11 +87,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Icon 3" />
+                android:text="Normal" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/mood4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -104,11 +109,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Icon 4" />
+                android:text="Baik" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/mood5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -125,7 +131,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Icon 5" />
+                android:text="Bersemangat" />
 
         </LinearLayout>
 
@@ -143,16 +149,18 @@
             android:id="@+id/moodText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Teks di sini" />
+            android:text="Bagaimana Perasaanmu hari ini ?" />
 
         <EditText
+            android:id="@+id/editTextPerasaan"
             android:layout_width="match_parent"
             android:layout_height="118dp"
-            android:hint="Area Teks di sini" />
+            android:hint="Tuliskan Semua Ceritamu disini" />
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_simpanmood"
         android:layout_width="369dp"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"

@@ -69,7 +69,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Okay" />
+                android:text="Normal" />
 
         </LinearLayout>
 
@@ -111,25 +111,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bersyukur" />
+                android:text="Bersemangat" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/frame_border">
 
-        <EditText
-            android:id="@+id/jurnalpribadi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:hint="Bagaimana Perasaanmu hari ini ?" />
-
-    </FrameLayout>
 
 </LinearLayout>
