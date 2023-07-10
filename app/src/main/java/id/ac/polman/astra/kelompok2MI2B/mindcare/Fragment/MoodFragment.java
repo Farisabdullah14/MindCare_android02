@@ -3,6 +3,7 @@ package id.ac.polman.astra.kelompok2MI2B.mindcare.Fragment;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -35,6 +36,9 @@ import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.MoodRepository;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.PenggunaRepository;
 import id.ac.polman.astra.kelompok2MI2B.mindcare.repository.RawRepository;
 
+import android.widget.ImageView;
+import android.view.View;
+
 public class MoodFragment extends Fragment {
     private static final String TAG = "MoodFragment";
 
@@ -58,6 +62,10 @@ public class MoodFragment extends Fragment {
     private String dateorder;
 
     private HomeFragment mHomeFragment;
+
+
+    // Deklarasikan ImageView dan simpan referensinya
+
 
 
     @Override
@@ -91,9 +99,18 @@ public class MoodFragment extends Fragment {
         dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         dateorder = dateFormat.format(calendar.getTime());
 
+        Drawable originalIcon1 = mMoodView1.getDrawable();
         mMoodView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mMoodView1.setImageResource(R.drawable.emoji5);
+
+                // Kembalikan gambar pada icon2 ke gambar asli
+                mMoodView4.setImageDrawable(originalIcon1);
+                mMoodView5.setImageDrawable(originalIcon1);
+                mMoodView3.setImageDrawable(originalIcon1);
+                mMoodView2.setImageDrawable(originalIcon1);
+
                 Toast.makeText(getContext(), "Mood Anda Sangat Buruk, Semoga Harimu Lebih Baik!", Toast.LENGTH_SHORT).show();
                 nilaiMood =1;
             }
@@ -102,6 +119,13 @@ public class MoodFragment extends Fragment {
         mMoodView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mMoodView2.setImageResource(R.drawable.emoji4);
+
+                mMoodView1.setImageDrawable(originalIcon1);
+                mMoodView4.setImageDrawable(originalIcon1);
+                mMoodView5.setImageDrawable(originalIcon1);
+                mMoodView3.setImageDrawable(originalIcon1);
+
                 Toast.makeText(getContext(), "Mood Anda Buruk, Semoga Semuanya berjalan baik!", Toast.LENGTH_SHORT).show();
                 nilaiMood =2;
             }
@@ -110,6 +134,13 @@ public class MoodFragment extends Fragment {
         mMoodView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mMoodView3.setImageResource(R.drawable.emoji3);
+
+                mMoodView1.setImageDrawable(originalIcon1);
+                mMoodView2.setImageDrawable(originalIcon1);
+                mMoodView4.setImageDrawable(originalIcon1);
+                mMoodView5.setImageDrawable(originalIcon1);
+
                 Toast.makeText(getContext(), "Mood Anda Sangat Normal, Semangat !", Toast.LENGTH_SHORT).show();
                 nilaiMood =3;
             }
@@ -118,6 +149,13 @@ public class MoodFragment extends Fragment {
         mMoodView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mMoodView4.setImageResource(R.drawable.emoji2);
+
+                mMoodView1.setImageDrawable(originalIcon1);
+                mMoodView2.setImageDrawable(originalIcon1);
+                mMoodView3.setImageDrawable(originalIcon1);
+                mMoodView5.setImageDrawable(originalIcon1);
+
                 Toast.makeText(getContext(), "Mood Anda Baik, Kamu yang terbaik!", Toast.LENGTH_SHORT).show();
                 nilaiMood =4;
             }
@@ -126,6 +164,13 @@ public class MoodFragment extends Fragment {
         mMoodView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mMoodView5.setImageResource(R.drawable.emoji1);
+
+                mMoodView1.setImageDrawable(originalIcon1);
+                mMoodView2.setImageDrawable(originalIcon1);
+                mMoodView4.setImageDrawable(originalIcon1);
+                mMoodView3.setImageDrawable(originalIcon1);
+
                 Toast.makeText(getContext(), "Mood Anda Sangat Baik, Tetap Jaga ya!", Toast.LENGTH_SHORT).show();
                 nilaiMood =5;
             }

@@ -46,6 +46,7 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.2.6'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
 
 
     testImplementation 'junit:junit:4.13.2'

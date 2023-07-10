@@ -37,8 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onIconClicked"
-                android:src="@drawable/emoji5"
-                android:background="@drawable/circle_background"/>
+                android:src="@drawable/note_emoji5"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onIconClicked"
-                android:src="@drawable/emoji4" />
+                android:src="@drawable/note_emoji4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onIconClicked"
-                android:src="@drawable/emoji3" />
+                android:src="@drawable/note_emoji3" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onIconClicked"
-                android:src="@drawable/emoji2" />
+                android:src="@drawable/note_emoji2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -126,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onIconClicked"
-                android:src="@drawable/emoji1" />
+                android:src="@drawable/note_emoji1" />
 
             <TextView
                 android:layout_width="wrap_content"
