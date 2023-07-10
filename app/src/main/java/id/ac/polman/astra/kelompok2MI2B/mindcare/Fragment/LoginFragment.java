@@ -39,7 +39,7 @@ public class LoginFragment extends Fragment {
         /*return super.onCreateView(inflater, container, savedInstanceState);*/
         View view = inflater.inflate(R.layout.fragment_welcome,container,false);
 
-        mButtonRegister = (Button) view.findViewById(R.id.registerButton);
+
         mButtonLogin = (Button) view.findViewById(R.id.loginButton);
 
 
