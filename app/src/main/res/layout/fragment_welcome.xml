@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_home"
+    android:orientation="vertical"
+    android:background="@color/biru">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_margin="10dp"
+        android:padding="30dp" />
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="541dp"
+        android:background="@drawable/cvbg"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/image_cv1"
+                android:layout_width="181dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/logo_midcare" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang di Mood Traker"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Login"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="#2d66dc"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
